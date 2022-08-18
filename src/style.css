@@ -1,3 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body{
+    
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* navbar stuff */
+img {
+    height: 100px;
+}
+
 .header {
     background-color: red;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+.logo{
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.nav{
+    display: inherit;
+    gap: 2rem;
+}
+
+.navbutton{
+    border:1px solid red;
+    background-color: wheat;
+    padding: 15px;
+    border-radius: 50%;
+}
+.navbutton:hover{
+    cursor: pointer;
+}
+
+/* middle stuff */
+.intro, .dishes, .about {
+    height: 88vh;
+    width: 100%;
+    display: flex;
+    background-color: wheat;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.dishes {
+    flex-direction: row;
+    gap: 15px;
+}
+.intro>* {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: gray;
+    padding: 80px;
+    border-radius: 10px;
+}
+.burger {
+    height: 200px;
+}
+
+.card :not([class='.img']) {
+    background-color: green;
+    /* border: 1px solid red; */
+    width: 250px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+/* Footer stuff */
+.footer{
+    background-color: red;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5rem;
+    justify-content: center;
+    height: 4vh;
+}
+
+
+
